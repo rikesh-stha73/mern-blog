@@ -1,0 +1,22 @@
+{
+  "name": "mern-blog",
+  "version": "1.0.0",
+  "description": "Mern app for fullstack development",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start"
+  },
+  "keywords": [],
+  "author": "Tech Academy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.6.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0"
+  }
+}
